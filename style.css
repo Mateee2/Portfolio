@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body.index-page {
+  background-image: url(assets/Background\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body.about-me {
+  background-image: url(assets/Coding.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #575757;
+}
+
+.main {
+  padding: 20px;
+  text-align: center;
+}
+
+.projects {
+  padding: 20px;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+.image-container a {
+  display: block;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10%;
+  transition: box-shadow 0.3s ease;
+}
+
+img:hover {
+  box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.8);
+}
+
+.container-3 {
+  color: purple;
+  padding: 20px;
+  text-align: left;
+}
+
+
+@media (max-width: 768px) {
+  nav a {
+      float: none;
+      display: block;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .image-container {
+      justify-content: center; 
+  }
+
+  img {
+      width: 100%; 
+      height: auto; 
+  }
+
+  .main, .projects, .container-3 {
+      padding: 10px; 
+      text-align: center; 
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+      padding: 8px;
+      font-size: 14px; 
+  }
+
+  .image-container {
+      gap: 10px; 
+  }
+
+  img {
+      width: 90%; 
+  }
+
+  .main h1, .projects h1 {
+      font-size: 24px; 
+  }
+}
